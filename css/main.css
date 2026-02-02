@@ -952,10 +952,101 @@ pre .javascript .function {
     width: 900px;
   }
 }
+@media (max-width: 991px) {
+  .header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
 .site-brand-container {
   display: flex;
   flex-shrink: 0;
   padding: 0 10px;
+}
+@media (max-width: 991px) {
+  .site-brand-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991px) {
+  .site-brand-container .site-meta {
+    order: 1;
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 991px) {
+  .site-brand-container .site-nav-right {
+    order: 2;
+    position: relative;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 991px) {
+  .site-brand-container .site-nav-toggle {
+    order: 3;
+    margin-left: auto;
+    position: relative;
+  }
+}
+@media (max-width: 991px) {
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    width: auto;
+    min-width: 180px;
+    display: none;
+    z-index: 1000;
+  }
+}
+@media (max-width: 991px) {
+  .site-nav.site-nav-on {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+}
+@media (max-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .menu .menu-item {
+    display: block;
+    width: auto;
+    margin: 4px 16px;
+    padding: 0;
+    text-align: left;
+    background: transparent;
+    border-radius: 4px;
+  }
+  .menu .menu-item a,
+  .menu .menu-item span.exturl {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--text-color);
+    text-decoration: none;
+    background: rgba(0,0,0,0.04);
+    border-radius: 4px;
+    transition: background 0.2s;
+  }
+  .menu .menu-item:hover a,
+  .menu .menu-item.menu-item-active a {
+    background: rgba(0,0,0,0.08);
+  }
 }
 .headband {
   background: #222;
@@ -1165,7 +1256,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #14dfcb;
+  background: #0bff9d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2173,6 +2264,8 @@ hr {
     display: block;
     padding: 10px 0;
     width: auto;
+    position: relative;
+    overflow: visible;
   }
 }
 .site-meta {
@@ -2223,7 +2316,25 @@ hr {
 }
 @media (max-width: 767px) {
   .site-nav {
-    padding: 10px 10px 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    left: auto;
+    width: auto;
+    min-width: 180px;
+    z-index: 1000;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 767px) {
+  .site-nav.site-nav-on {
+    display: block;
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   }
 }
 .menu {
