@@ -27,11 +27,11 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://sunrisulfr.github.io/images/persistent_agent.JPG">
 <meta property="article:published_time" content="2026-01-25T06:15:00.000Z">
-<meta property="article:modified_time" content="2026-02-02T01:43:47.243Z">
+<meta property="article:modified_time" content="2026-02-03T06:52:33.111Z">
 <meta property="article:author" content="Sunrisulfr">
 <meta property="article:tag" content="Agent">
 <meta property="article:tag" content="Artificial Life">
-<meta property="article:tag" content="Agent Memory">
+<meta property="article:tag" content="Cognitive Architecture">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://sunrisulfr.github.io/images/persistent_agent.JPG">
 
@@ -183,7 +183,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2026-02-02 09:43:47" itemprop="dateModified" datetime="2026-02-02T09:43:47+08:00">2026-02-02</time>
+                <time title="Modified: 2026-02-03 14:52:33" itemprop="dateModified" datetime="2026-02-03T14:52:33+08:00">2026-02-03</time>
               </span>
 
           
@@ -201,7 +201,124 @@
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
             <img src="/images/persistent_agent.JPG" itemprop="contentUrl">
         </div>
-        
+        <h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>Modern LLM-based agents have evolved from task-specific tools into increasingly autonomous systems.<br>However, most existing architectures remain <strong>reactive</strong>: they execute predefined tasks but lack long-term identity, intrinsic motivation, and self-directed learning.</p>
+<p>This paper introduces <strong>System 3</strong>, a meta-cognitive layer that enables agents to become <em>persistent</em>, self-improving entities.<br>Based on this idea, the authors propose <strong>Sophia</strong>, a persistent agent framework inspired by cognitive psychology and artificial life.</p>
+<hr>
+<h2 id="From-System-1-System-2-to-System-3"><a href="#From-System-1-System-2-to-System-3" class="headerlink" title="From System 1 &amp; System 2 to System 3"></a>From System 1 &amp; System 2 to System 3</h2><p>Traditional agent architectures are typically organized into two layers:</p>
+<ul>
+<li><strong>System 1</strong>: fast perception and action (reflexive responses).</li>
+<li><strong>System 2</strong>: slow, deliberate reasoning and planning.</li>
+</ul>
+<p>While powerful, these systems are static after deployment. They cannot autonomously redefine goals, maintain identity, or improve themselves over long time horizons.</p>
+<p>The paper proposes <strong>System 3</strong>, a supervisory cognitive layer responsible for:</p>
+<ul>
+<li>meta-cognition (thinking about thinking),</li>
+<li>identity continuity,</li>
+<li>long-term adaptation,</li>
+<li>self-directed goal generation.</li>
+</ul>
+<p>System 3 transforms agents from reactive problem solvers into persistent cognitive entities.</p>
+<hr>
+<h2 id="Psychological-Foundations-of-System-3"><a href="#Psychological-Foundations-of-System-3" class="headerlink" title="Psychological Foundations of System 3"></a>Psychological Foundations of System 3</h2><p>System 3 is grounded in four key constructs from cognitive psychology:</p>
+<ol>
+<li><p><strong>Meta-cognition</strong><br>Enables the agent to monitor and refine its own reasoning process.</p>
+</li>
+<li><p><strong>Theory of Mind</strong><br>Allows modeling of users and other agents’ beliefs, intentions, and preferences.</p>
+</li>
+<li><p><strong>Episodic Memory</strong><br>Stores autobiographical experiences to support long-term learning and identity.</p>
+</li>
+<li><p><strong>Intrinsic Motivation</strong><br>Provides internal drives such as curiosity, mastery, and autonomy.</p>
+</li>
+</ol>
+<p>Together, these components form the cognitive basis of a persistent agent.</p>
+<hr>
+<h2 id="The-Sophia-Framework"><a href="#The-Sophia-Framework" class="headerlink" title="The Sophia Framework"></a>The Sophia Framework</h2><p>Sophia operationalizes System 3 as a modular architecture layered on top of existing LLM agents.</p>
+<h3 id="Core-Components"><a href="#Core-Components" class="headerlink" title="Core Components"></a>Core Components</h3><ul>
+<li><p><strong>Process-Supervised Thought Search</strong><br>Curates and validates reasoning traces, turning them into reusable cognitive assets.</p>
+</li>
+<li><p><strong>Memory Module</strong><br>Maintains episodic and semantic memory for identity continuity and experience reuse.</p>
+</li>
+<li><p><strong>Self-Model &amp; User-Model</strong><br>Tracks the agent’s capabilities and user beliefs, enabling adaptive behavior.</p>
+</li>
+<li><p><strong>Hybrid Reward System</strong><br>Combines extrinsic task rewards with intrinsic motivations.</p>
+</li>
+<li><p><strong>Executive Monitor</strong><br>Orchestrates goal generation, reasoning control, and reflection.</p>
+</li>
+</ul>
+<p>This creates a continuous loop:</p>
+<blockquote>
+<p>perceive → reason → act → reflect → update goals → improve self</p>
+</blockquote>
+<hr>
+<h2 id="Persistent-Agent-vs-Continual-Learning"><a href="#Persistent-Agent-vs-Continual-Learning" class="headerlink" title="Persistent Agent vs. Continual Learning"></a>Persistent Agent vs. Continual Learning</h2><p>The paper highlights a key conceptual shift:</p>
+<table>
+<thead>
+<tr>
+<th>Continual Learning</th>
+<th>Persistent Agent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>External task schedule</td>
+<td>Self-generated goals</td>
+</tr>
+<tr>
+<td>Passive adaptation</td>
+<td>Active self-directed learning</td>
+</tr>
+<tr>
+<td>Parameter updates</td>
+<td>Meta-cognitive control + memory</td>
+</tr>
+<tr>
+<td>Task-specific</td>
+<td>Identity-driven development</td>
+</tr>
+</tbody></table>
+<p>A persistent agent does not just learn tasks—it learns <em>how to learn and why to learn</em>.</p>
+<hr>
+<h2 id="Experimental-Results"><a href="#Experimental-Results" class="headerlink" title="Experimental Results"></a>Experimental Results</h2><p>Experiments were conducted in a long-term web-based environment.</p>
+<h3 id="Quantitative-Findings"><a href="#Quantitative-Findings" class="headerlink" title="Quantitative Findings"></a>Quantitative Findings</h3><ul>
+<li><strong>Complex task success rate</strong> increased from 20% to 60% over 36 hours.</li>
+<li><strong>Reasoning cost</strong> reduced by ~80% on recurring tasks via episodic memory.</li>
+<li>Agents generated intrinsic tasks during user inactivity, maintaining autonomy.</li>
+</ul>
+<h3 id="Qualitative-Observations"><a href="#Qualitative-Observations" class="headerlink" title="Qualitative Observations"></a>Qualitative Observations</h3><p>Sophia demonstrated:</p>
+<ul>
+<li>coherent narrative identity,</li>
+<li>proactive goal generation,</li>
+<li>experience-driven skill growth,</li>
+<li>natural-language self-reflection.</li>
+</ul>
+<p>These results suggest that System 3 enables long-horizon cognitive evolution beyond zero-shot LLM capabilities.</p>
+<hr>
+<h2 id="Key-Insights"><a href="#Key-Insights" class="headerlink" title="Key Insights"></a>Key Insights</h2><p>The paper argues that true autonomous agents require more than better models—they need <strong>meta-cognitive architecture</strong>.</p>
+<p>System 3 provides:</p>
+<ul>
+<li>identity continuity,</li>
+<li>introspection and alignment,</li>
+<li>open-ended learning,</li>
+<li>artificial life-like behavior.</li>
+</ul>
+<p>Rather than treating LLM agents as tools, Sophia reframes them as evolving cognitive systems.</p>
+<hr>
+<h2 id="Why-This-Matters"><a href="#Why-This-Matters" class="headerlink" title="Why This Matters"></a>Why This Matters</h2><p>This work bridges three research directions:</p>
+<ul>
+<li>LLM agents,</li>
+<li>cognitive science,</li>
+<li>artificial life.</li>
+</ul>
+<p>It suggests a new paradigm:</p>
+<blockquote>
+<p>AI systems should not only solve tasks,<br>but also maintain identity, generate goals, and evolve over time.</p>
+</blockquote>
+<p>If realized at scale, persistent agents could redefine how we design autonomous AI—moving from static models to lifelong cognitive entities.</p>
+<hr>
+<h2 id="Personal-Reflection"><a href="#Personal-Reflection" class="headerlink" title="Personal Reflection"></a>Personal Reflection</h2><p>From a broader perspective, System 3 is not just an engineering upgrade—it is a philosophical shift.<br>It pushes AI research from <em>capability optimization</em> toward <em>artificial life and selfhood</em>.</p>
+<p>Persistent agents may represent the next frontier of embodied intelligence and long-term autonomy.</p>
+<hr>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><p>Sun et al., <em>Sophia: A Persistent Agent Framework for Artificial Life</em>, 2026.</p>
+
     </div>
 
     
@@ -212,7 +329,7 @@
           <div class="post-tags">
               <a href="/tags/Agent/" rel="tag"># Agent</a>
               <a href="/tags/Artificial-Life/" rel="tag"># Artificial Life</a>
-              <a href="/tags/Agent-Memory/" rel="tag"># Agent Memory</a>
+              <a href="/tags/Cognitive-Architecture/" rel="tag"># Cognitive Architecture</a>
           </div>
 
         
@@ -283,6 +400,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Overview"><span class="nav-number">1.</span> <span class="nav-text">Overview</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#From-System-1-System-2-to-System-3"><span class="nav-number">2.</span> <span class="nav-text">From System 1 &amp; System 2 to System 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Psychological-Foundations-of-System-3"><span class="nav-number">3.</span> <span class="nav-text">Psychological Foundations of System 3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Sophia-Framework"><span class="nav-number">4.</span> <span class="nav-text">The Sophia Framework</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Core-Components"><span class="nav-number">4.1.</span> <span class="nav-text">Core Components</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Persistent-Agent-vs-Continual-Learning"><span class="nav-number">5.</span> <span class="nav-text">Persistent Agent vs. Continual Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Experimental-Results"><span class="nav-number">6.</span> <span class="nav-text">Experimental Results</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Quantitative-Findings"><span class="nav-number">6.1.</span> <span class="nav-text">Quantitative Findings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Qualitative-Observations"><span class="nav-number">6.2.</span> <span class="nav-text">Qualitative Observations</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Key-Insights"><span class="nav-number">7.</span> <span class="nav-text">Key Insights</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-This-Matters"><span class="nav-number">8.</span> <span class="nav-text">Why This Matters</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Personal-Reflection"><span class="nav-number">9.</span> <span class="nav-text">Personal Reflection</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#References"><span class="nav-number">10.</span> <span class="nav-text">References</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
