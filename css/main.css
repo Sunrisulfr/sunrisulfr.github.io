@@ -1256,7 +1256,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #994fff;
+  background: #c188b0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2665,6 +2665,17 @@ a:hover {
   line-height: 1.45 !important;
   margin-bottom: 0.6em !important;
 }
+/* 正文段落中的链接样式 */
+.left-column p a {
+  color: #666 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #999 !important;
+  transition: all 0.3s ease;
+}
+.left-column p a:hover {
+  color: #333 !important;
+  border-bottom: 1px solid #333 !important;
+}
 .left-column ul {
   list-style: none !important;
   padding-left: 0 !important;
@@ -2679,9 +2690,44 @@ a:hover {
   left: 0;
   color: #bbb;
 }
-/* 自我介绍标签 */
-.intro-tags {
+/* 自我介绍区域（标签 + 图片） */
+.intro-section {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
   margin-top: 1.5rem;
+}
+.intro-tags {
+  flex: 0 0 auto;
+  min-width: 0;
+  max-width: 500px;
+}
+.intro-image {
+  flex: 1 1 auto;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-image img {
+  width: 95%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .intro-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .intro-image {
+    width: 95%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+  }
+  .intro-image img {
+    max-height: 250px;
+  }
 }
 .intro-tags-group {
   display: flex;
@@ -2715,6 +2761,13 @@ a:hover {
 .intro-tag-item {
   color: #333;
   margin-right: 0.6rem;
+}
+.intro-contact-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.5;
 }
 /* 右侧研究兴趣标题 */
 .right-column h3 {
